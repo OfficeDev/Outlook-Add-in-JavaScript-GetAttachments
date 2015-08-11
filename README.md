@@ -60,15 +60,19 @@ The sample has two parts. The first part, the mail app, runs in the email client
 ## Build and debug ##
 **Note**: The mail add-in will be activated on any email message in the user's Inbox that has one or more attachments. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample add-in.
 
-1. Open the solution in Visual Studio. Press F5 to build and deploy the sample add-in.
-2. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server.
-3. Allow the server to configure the mail account.
-4. Log on to the email account by entering the account name and password. 
-5. Select a message in the Inbox.
-6. Wait for the add-in bar to appear over the message.
-7. In the add-in bar, click **AttachmentExample**.
-8. When the mail add-in appears, click the **TestAttachments** button to send a request to the Exchange server.
-9. The server will respond with the number of attachments processed for the item. This should equal the number of attachments that the item contains.
+1. Open the solution in Visual Studio.
+2. Right-click the solution in Solution Explorer. Select **Set Startup Projects**. 
+3. Select **Common Properties**, and choose **Startup Project**.
+4. Make sure that the **Action** for **AttachmentExampleService** project is set to **Start**.
+5. Press F5 to build and deploy the sample add-in.
+6. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server.
+7. Allow the server to configure the mail account.
+8. Log on to the email account by entering the account name and password. 
+9. Select a message in the Inbox.
+10. Wait for the add-in bar to appear over the message.
+11. In the add-in bar, click **AttachmentExample**.
+12. When the mail add-in appears, click the **TestAttachments** button to send a request to the Exchange server.
+13. The server will respond with the number of attachments processed for the item. This should equal the number of attachments that the item contains.
 
 <a name="troubleshooting"></a>
 ##Troubleshooting
