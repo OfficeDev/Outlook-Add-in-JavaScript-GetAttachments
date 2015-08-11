@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title></title>
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+
+    <link rel="stylesheet" href="../../Content/fabric.min.css">
+    <link rel="stylesheet" href="../../Content/fabric.components.min.css">
+
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js" type="text/javascript"></script>
+
+    <!-- To enable offline debugging using a local reference to Office.js, use:                        -->
+    <!-- <script src="../../Scripts/Office/MicrosoftAjax.js" type="text/javascript"></script>  -->
+    <!-- <script src="../../Scripts/Office/1.1/office.js" type="text/javascript"></script>  -->
+
+    <link href="../App.css" rel="stylesheet" type="text/css" />
+    <script src="../App.js" type="text/javascript"></script>
+
+    <link href="Home.css" rel="stylesheet" type="text/css" />
+    <script src="Home.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- Page content -->
+    <div class="ms=font-m" id="content-main">
+        <div class="padding">
+            <h1>Message Attachments</h1>
+            <p>
+                <!--<input type="button" id="testButton" value="Test attachments" onclick="testAttachments()" />-->
+                <button class="ms-Button ms-Button--primary" id="testButton" onclick="testAttachments()">
+                    <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+                    <span class="ms-Button-label">Test attachments</span>
+                </button>
+            </p>
+            <p><span id="names" /></p>
+        </div>
+        <div id="footer" class="toast">
+            <span id="notice" style="font-weight: bold; margin-top: 5px"></span>
+            <br />
+            <span id="output"></span>
+        </div>
+    </div>
+</body> 
+</html>
