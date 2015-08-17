@@ -21,7 +21,7 @@ This sample shows you how to get attachments from an Exchange mailbox.
 This sample requires the following:  
 
   - Visual Studio 2013 with Update 5 or Visual Studio 2015.  
-  - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/o365-android-connect-signup) and get an Office 365 account through it.
+  - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can sign up for [an Office 365 Developer subscription](http://aka.ms/ro9c62) and get an Office 365 account through it.
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
   - Familiarity with JavaScript programming and web services.
 
@@ -51,7 +51,7 @@ This sample shows you how to retrieve attachments from a web service that suppor
 
 The sample has two parts. The first part, the mail app, runs in the email client. The mail add-in is shown whenever a message or an appointment is the active item. When you select the **Test attachments** button, the mail add-in sends details about the attachment to the web service that processes the request. The service uses the following steps to process attachments:
 
-- Sends a [GetAttachment](http://msdn.microsoft.com/en-us/library/aa494316(v=exchg.150).aspx) operation request to the Exchange server that hosts the mailbox. The server responds by sending the attachment to the service. In this sample, the service simply writes the XML from the server to trace output.
+- Sends a [GetAttachment](http://msdn.microsoft.com/library/aa494316(v=exchg.150).aspx) operation request to the Exchange server that hosts the mailbox. The server responds by sending the attachment to the service. In this sample, the service simply writes the XML from the server to trace output.
 - Returns the number of attachments processed to the mail app.
 
 
@@ -92,7 +92,7 @@ The following are common errors that can occur when you use Outlook Web App to t
 ## Additional resources ##
 
 - [Web API: The Official Microsoft ASP.NET Site](http://www.asp.net/web-api)
-- [How to: Get attachments from an Exchange server](http://msdn.microsoft.com/en-us/library/dn148008.aspx)
+- [How to: Get attachments from an Exchange server](http://msdn.microsoft.com/library/dn148008.aspx)
 
 ## Copyright
 Copyright (c) 2015 Microsoft. All rights reserved.
