@@ -91,6 +91,7 @@ The following are common errors that can occur when you use Outlook Web App to t
 <a name="additional-resources"></a>
 ## Additional resources ##
 
+- [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 - [Web API: The Official Microsoft ASP.NET Site](http://www.asp.net/web-api)
 - [How to: Get attachments from an Exchange server](http://msdn.microsoft.com/library/dn148008.aspx)
 
