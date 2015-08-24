@@ -73,12 +73,10 @@
     <Content Include="AppRead\Home\Home.js" />
     <Content Include="Content\fabric.components.min.css" />
     <Content Include="Content\fabric.min.css" />
-    <Content Include="Content\Office.css" />
     <Content Include="Images\Close.png" />
     <Content Include="packages.config" />
     <None Include="Scripts\_references.js" />
     <None Include="Scripts\Office\1.1\office-vsdoc.js" />
-    <Content Include="Content\OfficeThemes.css" />
     <Content Include="Scripts\Office\1.1\access-web-16.00.debug.js" />
     <Content Include="Scripts\Office\1.1\access-web-16.00.js" />
     <Content Include="Scripts\Office\1.1\ar-sa\office_strings.debug.js" />
