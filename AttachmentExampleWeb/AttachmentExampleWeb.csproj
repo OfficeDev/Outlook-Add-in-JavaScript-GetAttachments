@@ -71,8 +71,6 @@
     <Content Include="AppRead\Home\Home.css" />
     <Content Include="AppRead\Home\Home.html" />
     <Content Include="AppRead\Home\Home.js" />
-    <Content Include="Content\fabric.components.min.css" />
-    <Content Include="Content\fabric.min.css" />
     <Content Include="Images\Close.png" />
     <Content Include="packages.config" />
     <None Include="Scripts\_references.js" />
@@ -336,6 +334,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
