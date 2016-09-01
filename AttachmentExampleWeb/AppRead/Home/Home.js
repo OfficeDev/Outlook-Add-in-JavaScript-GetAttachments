@@ -58,6 +58,7 @@ function attachmentTokenCallback(asyncResult, userContext) {
 }
 
 function makeServiceRequest() {
+    var attachment;
     xhr = new XMLHttpRequest();
 
     // Update the URL to point to your service location.
@@ -68,7 +69,12 @@ function makeServiceRequest() {
 
     // Translate the attachment details into a form easily understood by WCF.
     for (i = 0; i < Office.context.mailbox.item.attachments.length; i++) {
-        serviceRequest.attachments[i] = JSON.parse(JSON.stringify(Office.context.mailbox.item.attachments[i].$0_0));
+        attachment = Office.context.mailbox.item.attachments[i];
+        attachment = attachment._data$p$0 || attachment.$0_0;
+
+        if (attachment !== undefined) {
+            serviceRequest.attachments[i] = JSON.parse(JSON.stringify(attachment));
+        }
     }
 
     // Send the request. The response is handled in the 
