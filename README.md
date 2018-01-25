@@ -1,8 +1,8 @@
 # Outlook add-in: Get attachments from an Exchange server
+This sample shows you how to get attachments from an Exchange mailbox.
 
 **Table of contents**
 
-* [Summary](#summary)
 * [Prerequisites](#prerequisites)
 * [Key components of the sample](#components)
 * [Description of the code](#codedescription)
@@ -11,12 +11,9 @@
 * [Questions and comments](#questions)
 * [Additional resources](#additional-resources)
 
-<a name="summary"></a>
-##Summary
-This sample shows you how to get attachments from an Exchange mailbox.
 
 <a name="prerequisites"></a>
-## Prerequisites ##
+## Prerequisites 
 
 This sample requires the following:  
 
@@ -43,9 +40,8 @@ The AttachmentService project defines a REST service by using the WCF API. The p
 - Web.config: Binds the sample service to the web server endpoint.
 
 
-
 <a name="codedescription"></a>
-##Description of the code
+## Description of the code
 
 This sample shows you how to retrieve attachments from a web service that supports your mail add-in. For example, you can create a service that uploads photos to a sharing site, or a service that stores documents into a repository. The service gets the attachments directly from the Exchange server, and doesn't require the client to perform extra processing to get the attachment and then send it along to the service.
 
@@ -57,25 +53,25 @@ The sample has two parts. The first part, the mail app, runs in the email client
 
 
 <a name="build"></a>
-## Build and debug ##
-**Note**: The mail add-in will be activated on any email message in the user's Inbox that has one or more attachments. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample add-in.
+## Build and debug 
+>**Note**: The mail add-in will be activated on any email message in the user's Inbox that has one or more attachments. You can make it easier to test the add-in by sending one or more email messages to your test account before you run the sample add-in.
 
 1. Open the solution in Visual Studio.
 2. Right-click the solution in Solution Explorer. Select **Set Startup Projects**. 
 3. Select **Common Properties**, and choose **Startup Project**.
 4. Make sure that the **Action** for **AttachmentExampleService** project is set to **Start**.
-5. Press F5 to build and deploy the sample add-in.
+5. Press **F5** to build and deploy the sample add-in.
 6. Connect to an Exchange account by providing the email address and password for an Exchange 2013 server.
 7. Allow the server to configure the mail account.
 8. Log on to the email account by entering the account name and password. 
 9. Select a message in the Inbox.
 10. Wait for the add-in bar to appear over the message.
-11. In the add-in bar, click **AttachmentExample**.
+11. In the add-in bar, press **AttachmentExample**.
 12. When the mail add-in appears, click the **TestAttachments** button to send a request to the Exchange server.
 13. The server will respond with the number of attachments processed for the item. This should equal the number of attachments that the item contains.
 
 <a name="troubleshooting"></a>
-##Troubleshooting
+## Troubleshooting
 The following are common errors that can occur when you use Outlook Web App to test a mail add-in for Outlook:
 
 - The add-in bar does not appear when a message is selected. If this occurs, restart the application by selecting **Debug – Stop Debugging** in the Visual Studio window, then press F5 to rebuild and deploy the add-in. 
@@ -89,7 +85,7 @@ The following are common errors that can occur when you use Outlook Web App to t
 
 
 <a name="additional-resources"></a>
-## Additional resources ##
+## Additional resources 
 
 - [More Add-in samples](https://github.com/OfficeDev?utf8=%E2%9C%93&query=-Add-in)
 - [Web API: The Official Microsoft ASP.NET Site](http://www.asp.net/web-api)
