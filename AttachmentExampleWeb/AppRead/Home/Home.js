@@ -1,4 +1,4 @@
-﻿/*
+/*
 * Copyright (c) Microsoft. All rights reserved. Licensed under the MIT license. See full license at the bottom of this file.
 */
 
@@ -6,12 +6,12 @@
 var xhr;
 var serviceRequest;
 
-(function () {
+(() => {
     "use strict";
 
     // The Office initialize function must be run each time a new page is loaded
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
+    Office.initialize = (reason) => {
+        $(document).ready(() => {
             app.initialize();
 
             initApp();
@@ -127,7 +127,7 @@ function showToast(title, message) {
 
     $("#footer").show("slow");
 
-    window.setTimeout(function () { $("#footer").hide("slow") }, 10000);
+    window.setTimeout(() => { $("#footer").hide("slow") }, 10000);
 };
 
 // *********************************************************
