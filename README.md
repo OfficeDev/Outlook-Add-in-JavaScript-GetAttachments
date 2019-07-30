@@ -5,6 +5,7 @@ products:
 - office-365
 languages:
 - javascript
+description: This sample shows you how to get attachments from an Exchange mailbox.
 extensions:
   contentType: samples
   technologies:
