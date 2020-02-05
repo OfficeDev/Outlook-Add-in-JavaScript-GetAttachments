@@ -6,12 +6,12 @@
 var xhr;
 var serviceRequest;
 
-(function () {
+(() => {
     "use strict";
 
     // The Office initialize function must be run each time a new page is loaded
-    Office.initialize = function (reason) {
-        $(document).ready(function () {
+    Office.initialize = (reason) => {
+        $(document).ready(() => {
             app.initialize();
 
             initApp();
@@ -68,7 +68,7 @@ function makeServiceRequest() {
     xhr.onreadystatechange = requestReadyStateChange;
 
     // Translate the attachment details into a form easily understood by WCF.
-    for (i = 0; i < Office.context.mailbox.item.attachments.length; i++) {
+    for (var i = 0; i < Office.context.mailbox.item.attachments.length; i++) {
         attachment = Office.context.mailbox.item.attachments[i];
         attachment = attachment._data$p$0 || attachment.$0_0;
 
@@ -94,7 +94,7 @@ function requestReadyStateChange() {
                 // Show the response.
                 var names = "<h2>Attachments processed: " + response.attachmentsProcessed + "</h2>";
 
-                for (i = 0; i < response.attachmentNames.length; i++) {
+                for (var i = 0; i < response.attachmentNames.length; i++) {
                     names += response.attachmentNames[i] + "<br />";
                 }
                 document.getElementById("names").innerHTML = names;
@@ -127,7 +127,7 @@ function showToast(title, message) {
 
     $("#footer").show("slow");
 
-    window.setTimeout(function () { $("#footer").hide("slow") }, 10000);
+    window.setTimeout(() => { $("#footer").hide("slow") }, 10000);
 };
 
 // *********************************************************
