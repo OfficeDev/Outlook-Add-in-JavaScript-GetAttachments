@@ -35,7 +35,7 @@ This sample shows you how to get attachments from an Exchange mailbox.
 This sample requires the following:  
 
   - Visual Studio 2013 with Update 5 or Visual Studio 2015.  
-  - A computer running Exchange 2013 with at least one email account, or a Microsoft 365 account. You can [join the Microsoft 365 Developer Program and get a free, renewable 90-day subscription to Microsoft 365 E5](https://aka.ms/devprogramsignup).
+  - A computer running Exchange 2013 with at least one email account, or a Microsoft 365 account. You can [join the Microsoft 365 Developer Program and get a free, renewable 90-day Microsoft 365 E5 subscription](https://aka.ms/devprogramsignup).
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
   - Familiarity with JavaScript programming and web services.
 
