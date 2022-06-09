@@ -26,7 +26,7 @@ extensions:
 * [Additional resources](#additional-resources)
 
 <a name="summary"></a>
-##Summary
+## Summary
 This sample shows you how to get attachments from an Exchange mailbox.
 
 <a name="prerequisites"></a>
@@ -35,7 +35,7 @@ This sample shows you how to get attachments from an Exchange mailbox.
 This sample requires the following:  
 
   - Visual Studio 2013 with Update 5 or Visual Studio 2015.  
-  - A computer running Exchange 2013 with at least one email account, or an Office 365 account. You can [join the Office 365 Developer Program and get a free 1 year subscription to Office 365](https://aka.ms/devprogramsignup).
+  - A computer running Exchange 2013 with at least one email account, or a Microsoft 365 account. You can [join the Microsoft 365 Developer Program and get a free, renewable 90-day Microsoft 365 E5 subscription](https://aka.ms/devprogramsignup).
   - Any browser that supports ECMAScript 5.1, HTML5, and CSS3, such as Internet Explorer 9, Chrome 13, Firefox 5, Safari 5.0.6, or a later version of these browsers.
   - Familiarity with JavaScript programming and web services.
 
@@ -59,7 +59,7 @@ The AttachmentService project defines a REST service by using the WCF API. The p
 
 
 <a name="codedescription"></a>
-##Description of the code
+## Description of the code
 
 This sample shows you how to retrieve attachments from a web service that supports your mail add-in. For example, you can create a service that uploads photos to a sharing site, or a service that stores documents into a repository. The service gets the attachments directly from the Exchange server, and doesn't require the client to perform extra processing to get the attachment and then send it along to the service.
 
@@ -89,14 +89,14 @@ The sample has two parts. The first part, the mail app, runs in the email client
 13. The server will respond with the number of attachments processed for the item. This should equal the number of attachments that the item contains.
 
 <a name="troubleshooting"></a>
-##Troubleshooting
+## Troubleshooting
 The following are common errors that can occur when you use Outlook Web App to test a mail add-in for Outlook:
 
 - The add-in bar does not appear when a message is selected. If this occurs, restart the application by selecting **Debug – Stop Debugging** in the Visual Studio window, then press F5 to rebuild and deploy the add-in. 
 - Changes to the JavaScript code may not be picked up when you deploy and run the add-in. If the changes are not picked up, clear the cache on the web browser by selecting **Tools – Internet options** and clicking the **Delete…** button. Delete the temporary Internet files and then restart the add-in. 
 
 <a name="questions"></a>
-##Questions and comments##
+## Questions and comments ##
 
 - If you have any trouble running this sample, please [log an issue](https://github.com/OfficeDev/Outlook-Add-in-Javascript-GetAttachments/issues).
 - Questions about Office Add-in development in general should be posted to [Stack Overflow](http://stackoverflow.com/questions/tagged/office-addins). Make sure that your questions or comments are tagged with [office-addins].
